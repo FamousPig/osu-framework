@@ -46,7 +46,7 @@ namespace osu.Framework.Tests.Visual.UserInterface
             AddStep("click item", () => ClickItem(0, 0));
             AddStep("click item", () => ClickItem(1, 0));
             AddAssert("menu not closed", () =>
-                Menus.GetSubMenu(0).State == MenuState.Open &&
+                Menus.GetSubMenu(0).State == MenuState.Closed &&
                 Menus.GetSubMenu(1).State == MenuState.Open);
         }
     }
