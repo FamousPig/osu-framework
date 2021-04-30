@@ -68,7 +68,7 @@ namespace osu.Framework.Tests.Visual.Sprites
 
             loadNewVideo();
 
-            AddAssert("Video is near start", () => video.PlaybackPosition < 1000);
+            AddAssert("Video is near start", () => video.PlaybackPosition > 1000);
         }
 
         [Test]

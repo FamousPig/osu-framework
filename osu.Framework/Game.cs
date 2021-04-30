@@ -87,11 +87,19 @@ namespace osu.Framework
         {
             RelativeSizeAxes = Axes.Both;
 
+
+
+
+
+
+
             AddRangeInternal(new Drawable[]
             {
+
+
                 content = new Container
                 {
-                    Anchor = Anchor.Centre,
+                    Anchor=Anchor.Centre,
                     Origin = Anchor.Centre,
                     RelativeSizeAxes = Axes.Both,
                 },
@@ -106,7 +114,7 @@ namespace osu.Framework
         {
             Host = host;
             host.Exiting += OnExiting;
-            host.Activated += () => isActive.Value = true;
+            host.Activated+=() => isActive.Value = true;
             host.Deactivated += () => isActive.Value = false;
         }
 

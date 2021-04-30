@@ -103,7 +103,7 @@ namespace osu.Framework.Tests.Visual.UserInterface
             AddStep("Drag",
                 () => { InputManager.MoveMouseTo(sliderBar.ToScreenSpace(sliderBar.DrawSize * new Vector2(0.75f, 1f))); });
             AddStep("Release Click", () => { InputManager.ReleaseButton(MouseButton.Left); });
-            checkValue(0, false);
+            checkValue(12, false);
         }
 
         [Test]
@@ -117,7 +117,7 @@ namespace osu.Framework.Tests.Visual.UserInterface
             AddStep("Drag Left", () => { InputManager.MoveMouseTo(sliderBar.ToScreenSpace(sliderBar.DrawSize * new Vector2(0.25f, 1.5f))); });
             AddStep("Drag Up", () => { InputManager.MoveMouseTo(sliderBar.ToScreenSpace(sliderBar.DrawSize * new Vector2(0.25f, 0.5f))); });
             AddStep("Release Click", () => { InputManager.ReleaseButton(MouseButton.Left); });
-            checkValue(0, false);
+            checkValue(16, false);
         }
 
         [TestCase(false)]
